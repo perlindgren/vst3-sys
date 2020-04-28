@@ -39,3 +39,16 @@ script = [
     "cargo build --package again",
     "cp target/debug/again.dll target/debug/again.vst3"
 ]
+
+[tasks.midi]
+workspace = false
+script = []
+
+[tasks.midi.linux]
+workspace = false
+script = [
+    "cargo build --package midi",
+    "mkdir -p target/debug/plugin.vst3/Contents/x86_64-linux",
+    "mkdir -p target/debug/plugin.vst3/Contents/Resources",
+    "cp target/debug/libmidi.so target/debug/plugin.vst3/Contents/x86_64-linux/plugin.so"
+]

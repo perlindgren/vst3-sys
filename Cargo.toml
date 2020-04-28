@@ -12,4 +12,4 @@ vst3-com = { path = "./com" }
 bitflags = "1.2.0"
 
 [workspace]
-members = ["examples/passthru", "examples/again", "com", "com/macros", "com/macros/support"]
+members = ["examples/passthru", "examples/again", "examples/midi", "com", "com/macros", "com/macros/support"]
